@@ -1,0 +1,52 @@
+@use "varible.scss" as *;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 62.2%;
+}
+.container{
+    // background-color: $bg;
+    height: 100vh;
+    
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    &-slider{
+        background-color: $bg;
+        margin: auto auto;
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-slide{
+            margin: auto auto;
+            height: 100%;
+            width: 80%;
+            display: flex;
+            // flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            &-left{
+                width: 50%;
+                height: 100%;
+                &-Avtar{
+                    height: 60rem;
+                    width: 40rem;
+                    & img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+            &-right{
+                background-color: green;
+                width: 50%;
+                height: 100%;
+            }
+        }
+    }
+}

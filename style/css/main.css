@@ -1,3 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 62.2%;
+}
 
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.container-slider {
+  background-color: #191919;
+  margin: auto auto;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-slider-slide {
+  margin: auto auto;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.container-slider-slide-left {
+  width: 50%;
+  height: 100%;
+}
+.container-slider-slide-left-Avtar {
+  height: 60rem;
+  width: 40rem;
+}
+.container-slider-slide-left-Avtar img {
+  height: 100%;
+  width: 100%;
+}
+.container-slider-slide-right {
+  background-color: green;
+  width: 50%;
+  height: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */
