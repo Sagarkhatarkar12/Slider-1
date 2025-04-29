@@ -24,12 +24,13 @@
   align-items: center;
   flex-direction: column;
 }
-.container-slider-slide, .container-slider-slide-3, .container-slider-slide-2 {
+.container-slider-slide, .container-slider-slide-4, .container-slider-slide-3, .container-slider-slide-2 {
   position: relative;
   margin: auto auto;
   height: 100%;
   width: 80%;
   gap: 1rem;
+  padding: 3rem 0rem;
   background-color: #191919;
   display: flex;
   flex-direction: column;
@@ -105,6 +106,7 @@
 }
 .container-slider-slide-right-naviBtn {
   padding: 0.5rem 1rem;
+  width: 5rem;
   background-color: white;
   border-radius: 1rem;
   margin-left: 1rem;
@@ -134,11 +136,18 @@
   grid-template-columns: auto auto auto auto;
   gap: 2rem;
 }
+.container-slider-slide-4 .flex {
+  flex-direction: row-reverse;
+}
 
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.flex-btn {
+  display: flex;
 }
 
 /*# sourceMappingURL=main.css.map */

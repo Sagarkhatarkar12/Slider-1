@@ -1,4 +1,5 @@
 @use "varible.scss" as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
     font-family: sans-serif;
     font-size: 62.2%;
 }
+
 .container {
     // background-color: $bg;
     height: 100%;
@@ -15,6 +17,7 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
+
     &-slider {
         background-color: $bg;
         margin: auto auto;
@@ -24,33 +27,39 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
         &-slide {
             position: relative;
             margin: auto auto;
             height: 100%;
             width: 80%;
-            gap:1rem;
+            gap: 1rem;
+            padding: 3rem 0rem;
             background-color: $bg;
             display: flex;
             flex-direction: column;
             // flex-direction: row-reverse;
             justify-content: center;
             align-items: center;
+
             &-left {
                 width: 50%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
                 &-Avtar {
                     height: 60rem;
                     width: 40rem;
+
                     & img {
                         height: 100%;
                         width: 100%;
                     }
                 }
             }
+
             &-right {
                 display: flex;
                 justify-content: center;
@@ -64,12 +73,14 @@
                 width: 50%;
                 flex-direction: column;
                 height: 100%;
+
                 &-p {
                     font-size: 2rem;
                     color: white;
                     font-family: "Roboto Slab";
                     font-weight: 500;
                 }
+
                 &-heading {
                     font-size: 7.2rem;
                     color: $text-color;
@@ -79,24 +90,27 @@
 
                     font-style: normal;
                 }
-                &-desc{
+
+                &-desc {
                     font-family: "Roboto", sans-serif;
                     font-size: 2rem;
                     color: $white;
                     line-height: 1.3;
                     color: gray;
                     text-align: left;
-                    &-desc-s{
+
+                    &-desc-s {
                         text-align: left;
                         color: white;
-                    font-size: 2.4rem;
-                    font-family: "Pirata One", system-ui;
-                    margin-right: 1rem;
-                    font-weight: 700;
+                        font-size: 2.4rem;
+                        font-family: "Pirata One", system-ui;
+                        margin-right: 1rem;
+                        font-weight: 700;
 
                     }
                 }
-                &-bookBtn{
+
+                &-bookBtn {
                     font-family: "Roboto";
                     font-size: 2rem;
                     border: 2px solid white;
@@ -105,54 +119,74 @@
                     color: $white;
                     font-weight: 600;
                     background-color: transparent;
-cursor: pointer;
+                    cursor: pointer;
                 }
-                &-naviBtn{
+
+                &-naviBtn {
                     padding: 0.5rem 1rem;
+                    width: 5rem;
                     // color: white;
-                    background-color: white ;
+                    background-color: white;
                     border-radius: 1rem;
                     margin-left: 1rem;
                     border: none;
                     cursor: pointer;
                     outline: none;
-                 &  i{
-font-size: 3rem ;
+
+                    & i {
+                        font-size: 3rem;
                     }
                 }
             }
         }
-        &-slide-2{
+
+        &-slide-2 {
             @extend .container-slider-slide;
             flex-direction: row-reverse;
         }
-        &-slide-3{
+
+        &-slide-3 {
             @extend .container-slider-slide;
-            .container-slider-slide-3{
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            padding: 3rem 0rem;
-            height: 100%;
+
+            .container-slider-slide-3 {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                padding: 3rem 0rem;
+                height: 100%;
             }
+
             // @extend .container-slider;
-          &-right{
-            display: flex;
-            flex-direction: column;
-          }
-           .image-container{
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            gap: 2rem;
-                        }
+            &-right {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .image-container {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                gap: 2rem;
+            }
+        }
+        &-slide-4{
+            @extend .container-slider-slide;
+            // flex-direction: row-reverse;
+            
+            & .flex{
+                flex-direction: row-reverse;
+            }
+            
         }
     }
 }
 
-.flex{
+.flex {
     display: flex;
     // justify-self: center;
     justify-content: center;
     align-items: center;
 
+}
+.flex-btn{
+    display: flex;
 }
